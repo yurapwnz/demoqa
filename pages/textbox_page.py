@@ -56,7 +56,6 @@ class TextBoxPage(BasePage):
 
     def cur_address_equal_on_output(self, cur_address=cur_address):
         output_cur_address = self.browser.find_element(*TestBoxPageLocators.OUTPUT_CURRENT_ADDRESS).text
-        print('dfdf'+output_cur_address)
         assert cur_address in output_cur_address, f"Output cur_address {cur_address} is not equal {output_cur_address}"
 
     def per_address_equal_on_output(self, per_address=per_address):

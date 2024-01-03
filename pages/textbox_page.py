@@ -25,22 +25,18 @@ class TextBoxPage(BasePage):
 
     def input_fullname(self, fullname=fullname):
         fullname_field = self.browser.find_element(*TestBoxPageLocators.FULL_NAME_FIELD)
-        print(fullname)
         fullname_field.send_keys(fullname)
 
     def input_email(self, email=email):
         fullname_field = self.browser.find_element(*TestBoxPageLocators.EMAIL_FIELD)
-        print(email)
         fullname_field.send_keys(email)
 
     def input_cur_address(self, cur_address=cur_address):
         fullname_field = self.browser.find_element(*TestBoxPageLocators.CURRENT_ADDRESS_FIELD)
-        print(cur_address)
         fullname_field.send_keys(cur_address)
 
     def input_per_address(self, per_address=per_address):
         fullname_field = self.browser.find_element(*TestBoxPageLocators.PERMANENT_ADDRESS)
-        print(per_address)
         fullname_field.send_keys(per_address)
 
     def click_to_submit(self):
